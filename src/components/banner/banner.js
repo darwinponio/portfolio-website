@@ -5,7 +5,7 @@ export const BannerComponent = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="">
+        <Row>
           <Col xs={12} md={6} xl={5} className="col-image">
             <img
               src={process.env.PUBLIC_URL + "assets/thumb.png"}

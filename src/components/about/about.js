@@ -32,7 +32,7 @@ export const AboutComponent = () => {
             <Col xs={12} md={6} xl={7}>
               <img
                 className="about-img"
-                src={process.env.PUBLIC_URL + "assets/about.png"}
+                src={process.env.PUBLIC_URL + "assets/cartoon_1.png"}
                 alt="Heading IMG"
               />
             </Col>
