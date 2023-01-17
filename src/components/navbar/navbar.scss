@@ -1,4 +1,3 @@
-/************ Navbar Css ************/
 .navbar-container {
     .logo {
         width: 40px;
@@ -23,9 +22,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
     color: #fff !important;
     letter-spacing: 0.8px;
-    padding: 0 25px;
-    font-size: 18px;
+    padding: 0 18px;
+    font-size: 14px;
     opacity: 0.75;
+    font-family: Agrandir Wide, serif;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -61,10 +61,26 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    // background-color: #ffffff;
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
+}
+
+.social-icon a {
+    svg {
+        color: #ffffff;
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        transition: 0.3s ease-in-out;
+
+        svg {
+            color: #000000;
+            z-index: 999;
+        }
+    }
 }
 
 .social-icon a:hover::before {

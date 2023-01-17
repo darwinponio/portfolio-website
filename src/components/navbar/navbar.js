@@ -41,7 +41,7 @@ export const NavbarComponent = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
               <Nav.Link
                 href="#home"
                 className={
@@ -52,15 +52,25 @@ export const NavbarComponent = () => {
                 Home
               </Nav.Link>
               <Nav.Link
+                href="#portfio"
+                className={
+                  activeLink === "about" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("portfio")}
+              >
+                Portfolio
+              </Nav.Link>
+              <Nav.Link
                 href="#about"
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("about")}
+                onClick={() => onUpdateActiveLink("contact")}
               >
-                Link
+                Contact
               </Nav.Link>
             </Nav>
+            <span>|</span>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="#fb">
@@ -73,10 +83,6 @@ export const NavbarComponent = () => {
                   <FontAwesomeIcon icon="fa-brands fa-google" />
                 </a>
               </div>
-              <button className="btnConnect">
-                {" "}
-                <span>Let's connect</span>{" "}
-              </button>
             </span>
           </Navbar.Collapse>
         </Container>

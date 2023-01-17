@@ -1,5 +1,6 @@
 import { Col, Row, Container } from "react-bootstrap";
 import "./banner.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const BannerComponent = () => {
   return (
@@ -15,9 +16,13 @@ export const BannerComponent = () => {
           <Col xs={12} md={6} xl={7} className="col-name">
             <h1>
               <p className="first-name">Darwin</p>
-              <p>Ponio.</p>
+              <p>
+                Ponio<span>.</span>
+              </p>
             </h1>
             <p className="position">Senior Fullstack Developer</p>
+            {/* <button type="submit" className="btn-go"><span>Let's Go!</span></button> */}
+            <button type="button" class="btn btn-outline-light btn-lg">Let's Go!</button>
           </Col>
         </Row>
       </Container>

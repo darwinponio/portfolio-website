@@ -11,15 +11,25 @@
     padding-left: 200px;
 
     h1 {
-        font-size: 70px;
+        font-size: 50px;
+        font-family: Agrandir, serif;
 
         .first-name {
             margin-bottom: 0;
+        }
+
+        span {
+          color: #FFBD59;
         }
     }
 
     .position {
         font-size: 25px;
+        font-family: Agrandir, serif;
+        color: #FFBD59;
+    }
+    button {
+      padding: 10px 40px;
     }
   }
 
